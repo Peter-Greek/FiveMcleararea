@@ -1,15 +1,10 @@
---Coded by Albo1125.
-
-local jailPassword = "clears" --change this password to your liking and don't share it with the criminals ;-)
-
------------------------------
 
 AddEventHandler('chatMessage', function(source, n, message)
     local player = source
     cm = stringsplit(message, " ")
 
 	if (cm[1] == "/clear") then
-		if IsPlayerAceAllowed(player, "lance.clear") then
+		if IsPlayerAceAllowed(player, "BCDOJRP.clear") then
 			print("Cleared area")
 			TriggerClientEvent("CA", -1)
 			TriggerClientEvent('chatMessage', -1, '[^1SYSTEM^0]', { 255, 255, 255 }, GetPlayerName(player) ..' Cleared all vehicles from the Server')
