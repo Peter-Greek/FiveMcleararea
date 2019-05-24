@@ -1,4 +1,4 @@
-RegisterCommand(clearall, function(source, args, rawCommand) 
+RegisterCommand("clearall", function(source, args, rawCommand) 
 	local player = source	 
 	print("Cleared area")
 		TriggerClientEvent("CA", -1)
